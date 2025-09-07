@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+  /* CSS */
+  .form-row {
+    margin-bottom: 10px;
+  }
+  label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 200px;
+  }
+  input[type="submit"] {
+    margin-left: 110px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Login</h1>
+
+<div id="login-section">
+  <form id="login-form" method="POST" action="login">
+    <div class="form-row">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-row">
+      <input type="submit" value="Login">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
